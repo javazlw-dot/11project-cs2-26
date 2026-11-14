@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Молпик - дистрибьютор молочной продукции</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- To change a picture, edit the src of the img tag -->
+
+<header class="top">
+  <div class="container top-row">
+    <a class="logo" href="#home">МОЛПИК</a>
+    <nav class="nav"><a href="#about">О компании</a><a href="#catalog">Каталог</a><a href="#coop">Сотрудничество</a><a href="#partners">Партнёры</a><a href="#news">Новости</a><a href="#contacts">Контакты</a></nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <img class="hero-bg" src="hero-milk.svg" alt="Брызги молока">
+  <div class="container hero-text">
+    <h1>Официальный дистрибьютор крупнейших российских производителей</h1>
+    <p class="small">Поставляем молочную продукцию в торговые сети, магазины и предприятия общественного питания по всей России.</p>
+    <a class="btn" href="#pricelist">Получить прайс-лист</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <p class="label">О компании</p>
+      <h2>ООО «Молпик»</h2>
+      <p class="small">Компания работает на рынке более 20 лет. Мы выстроили собственную логистику, современные склады и прямые договоры с производителями, поэтому гарантируем свежую продукцию и стабильные цены.</p>
+      <img class="map" src="russia-map.svg" alt="Карта России">
+    </div>
+    <div class="nums">
+      <div><b>5</b><span>складских комплексов</span></div>
+      <div><b>100</b><span>производителей-партнёров</span></div>
+      <div><b>3800</b><span>товарных позиций</span></div>
+      <div><b>12</b><span>федеральных сетей среди клиентов</span></div>
+      <div><b>20</b><span>лет на рынке</span></div>
+      <div><b>100</b><span>городов доставки</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="catalog" id="catalog">
+  <div class="container">
+    <p class="label">Продукция</p>
+    <h2>Каталог</h2>
+    <div class="cat-grid">
+      <div><h4>Молоко и сливки</h4><p class="small">Питьевое молоко, топлёное молоко, сливки разной жирности</p></div>
+      <div><h4>Сыры</h4><p class="small">Твёрдые, полутвёрдые, плавленые и рассольные сыры</p></div>
+      <div><h4>Масло и спреды</h4><p class="small">Сливочное масло, топлёное масло, молочные спреды</p></div>
+      <div><h4>Кисломолочная продукция</h4><p class="small">Кефир, ряженка, йогурты, сметана, творог</p></div>
+      <div><h4>Десерты</h4><p class="small">Творожные десерты, сырки, сгущённое молоко</p></div>
+      <div><h4>Сухие молочные продукты</h4><p class="small">Сухое молоко, сухие сливки, молочные смеси</p></div>
+    </div>
+    <a class="btn btn-center" href="#pricelist">Скачать прайс-лист</a>
+  </div>
+</section>
+
+<section class="coop" id="coop">
+  <div class="container">
+    <p class="label">Для клиентов</p>
+    <h2>Сотрудничество</h2>
+    <details open><summary>Отдельные условия для торговых сетей</summary><p class="small">Индивидуальные цены, отсрочка платежа и доставка в распределительные центры сети.</p></details>
+    <details><summary>Поставки для магазинов и кафе</summary><p class="small">Минимальная партия от одной паллеты, доставка по графику.</p></details>
+    <details><summary>Работа с производителями</summary><p class="small">Берём на реализацию продукцию и выводим её на федеральный рынок.</p></details>
+    <details><summary>Вопросы и ответы</summary><p class="small">Ответим на любые вопросы по ассортименту, срокам и условиям поставки.</p></details>
+  </div>
+</section>
+
+<section class="suppliers">
+  <img class="sup-bg" src="warehouse.svg" alt="Склад с продукцией">
+  <div class="container sup-grid">
+    <div class="sup-text">
+      <p class="label">Для производителей</p>
+      <h2>Поставщикам и производителям</h2>
+      <ol class="steps">
+        <li><b>1</b>Оставьте заявку на сотрудничество</li>
+        <li><b>2</b>Мы изучим ваш ассортимент и условия</li>
+        <li><b>3</b>Подпишем договор и начнём поставки</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="form-block">
+  <form class="card-form" onsubmit="return false">
+    <p class="label dark">Оставьте заявку</p>
+    <h3>СОТРУДНИЧЕСТВО</h3>
+    <div class="fields"><input type="text" placeholder="Название компании"><input type="text" placeholder="Контактное лицо"><input type="tel" placeholder="Телефон"><input type="email" placeholder="Электронная почта"></div>
+    <input type="text" placeholder="Сообщение">
+    <button class="btn btn-dark" type="button">Отправить заявку</button>
+    <p class="tiny">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+  </form>
+</section>
+
+<section class="partners" id="partners">
+  <div class="container">
+    <p class="label">Нам доверяют</p>
+    <h2>Партнёры</h2>
+    <div class="logos"><span>ЯРКИЙ</span><span>Лента</span><span>Доброцен</span><span>Магнит</span><span>METRO</span><span>Перекрёсток</span><span>Дикси</span></div>
+  </div>
+</section>
+
+<section class="news" id="news">
+  <div class="container">
+    <p class="label">Что нового</p>
+    <h2>Новости</h2>
+    <div class="news-grid">
+      <article><time>12.10.2026</time><h4>Открыт новый склад в Подмосковье</h4><p class="small">Площадь комплекса составила 12 тысяч квадратных метров.</p></article>
+      <article><time>28.09.2026</time><h4>Расширили ассортимент сыров</h4><p class="small">В каталоге появилось более 200 новых позиций.</p></article>
+      <article><time>05.09.2026</time><h4>Подписали договор с новым производителем</h4><p class="small">Теперь мы поставляем продукцию ещё одной крупной компании.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="contacts" id="contacts">
+  <img class="map-full" src="contacts-map.svg" alt="Карта: офис компании">
+  <div class="container contacts-card">
+    <h2>Контакты</h2>
+    <p class="small">г. Москва, ул. Примерная, д. 10</p>
+    <p class="small">Пн-Пт: с 9:00 до 18:00</p>
+    <p class="small">+7 (495) 123-45-67 · info@molpik.example</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container foot-row"><span>ООО «Молпик», 2026</span><span>Политика конфиденциальности</span></div>
+</footer>
+
+<!-- pop-up: price list (opens with #pricelist, closes with the cross) -->
+<div class="modal" id="pricelist">
+  <form class="card-form modal-box" onsubmit="return false">
+    <a class="close" href="#home">×</a>
+    <h3>ПРАЙС-ЛИСТ</h3>
+    <div class="fields"><input type="text" placeholder="Фамилия"><input type="text" placeholder="Имя"><input type="email" placeholder="Электронная почта"><input type="tel" placeholder="Телефон"></div>
+    <button class="btn btn-dark" type="button">Получить прайс-лист</button>
+    <p class="tiny">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+  </form>
+</div>
+
+</body>
+</html>
